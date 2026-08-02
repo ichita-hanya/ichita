@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<!-- Security hardening -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https: data:; frame-src https:; connect-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://forms.gle; upgrade-insecure-requests;" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<script>if (window.top !== window.self) { try { window.top.location = window.self.location.href; } catch(e) {} }</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCTBNZ6ZV6"></script>
 <script>
@@ -180,10 +185,10 @@ footer .snslinks a:hover{color:var(--green);}
     <p>半谷一太（ハンくん） / 渋谷シティFC（SHIBUYA CITY FC）所属サッカー選手・サッカーインフルエンサー</p>
     <p>&copy; 2026 Ichita Hanya / HANKUN PROJECT. All rights reserved.</p>
     <div class="snslinks">
-      <a href="https://www.tiktok.com/@hankun_everyday" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://www.instagram.com/h13i_14" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.youtube.com/@hankun" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://x.com/hankun" target="_blank" rel="noopener">X</a>
+      <a href="https://www.tiktok.com/@hankun_everyday" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a href="https://www.instagram.com/h13i_14" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.youtube.com/@hankun" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://x.com/hankun" target="_blank" rel="noopener noreferrer">X</a>
     </div>
   </div>
 </footer>
